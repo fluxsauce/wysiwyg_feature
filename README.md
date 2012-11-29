@@ -1,6 +1,7 @@
 # Drupal 7 WYSIWYG Feature
 
-Installs and configures WYSIWYG with IMCE and TinyMCE.
+Turn-key installation and configuration of WYSIWYG with IMCE and TinyMCE.
+Includes drush make file for dependencies.
 
 ## Contributed code
 
