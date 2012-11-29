@@ -1,0 +1,30 @@
+<?php
+/**
+ * @file
+ * Variables and other custom functionality.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function wysiwyg_feature_install() {
+  $variables = array();
+
+  $variables['imce_roles_profiles'] = array(
+    3 => array(
+      'public_pid' => '1',
+    ),
+    2 => array(
+      'public_pid' => 0,
+    ),
+    1 => array(
+      'public_pid' => 0,
+    ),
+  );
+
+  $variables['imce_settings_disable_private'] = 1;
+
+  foreach ($variables as $key => $value) {
+    variable_set($key, $value);
+  }
+}
